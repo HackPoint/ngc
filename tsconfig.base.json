@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ngc/cdk": ["packages/cdk/src/index.ts"],
+      "@ngc/ui": ["packages/ui/src/index.ts", "@ngc/cdk"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
